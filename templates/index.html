@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Dopermind Store</title>
+
+    <!-- Load font Poppins trực tiếp -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="{{ url_for('static', filename='videos/background.webm') }}" type="video/webm">
+    Trình duyệt của bạn không hỗ trợ video nền.
+</video>
+
+<div class="overlay"></div> <!-- lớp phủ nền -->
+
+<!-- Banner -->
+<section id="store-banner">
+    <h3>SHOP TÀI KHOẢN & DỊCH VỤ</h3>
+    <h1>DOPERMIND STORE</h1>
+    <div class="scroll-down" id="scroll-down">
+        ↓
+    </div>
+</section>
+
+<section class="info-section" id="intro-section">
+    <h2>Lời giới thiệu</h2>
+    <p id="intro-text">
+        Chào mừng bạn đến với Dopermind Store! Đây là nơi mình trưng bày những sản phẩm, tài khoản và dịch vụ hot và
+        chất lượng nhất. Sứ mệnh của mình là mang đến cho quý khách hàng trải nghiệm mua sắm đơn giản, trực quan, tiện
+        lợi và giá cả tốt nhất. Store của mình cam kết bảo hành 100% các đơn hàng được trưng bày. Nếu có sản phẩm có
+        thời gian bảo hành đặc biệt, sẽ được thông tin tới quý khách hàng trước khi chốt đơn.
+    </p>
+    <a href="#contact" class="btn-contact">Liên hệ ngay</a>
+    <p>Hãy bắt đầu tham khảo các sản phẩm bên dưới nhé!!!</p>
+</section>
+
+<section class="product-section">
+    <h2>Sản phẩm bán chạy - KING</h2>
+    <img src="{{ url_for('static', filename='images/hot1.png') }}" alt="Hot Product 1">
+</section>
+
+<!-- Sản phẩm Hot 2 -->
+<section class="product-section">
+    <h2>Sản phẩm bán chạy - QEEN</h2>
+    <img src="{{ url_for('static', filename='images/hot2.png') }}" alt="Hot Product 2">
+</section>
+
+<!-- Sản phẩm khác 1 -->
+<section class="product-section">
+    <h2>Các sản phẩm trending</h2>
+    <img src="{{ url_for('static', filename='images/prod1.png') }}" alt="Product 1">
+</section>
+
+<!-- Sản phẩm khác 2 -->
+<section class="product-section">
+    <h2>Các sản phẩm khác</h2>
+    <img src="{{ url_for('static', filename='images/prod2.png') }}" alt="Product 2">
+</section>
+
+<section class="info-section">
+    <h2>Sản phẩm chưa có trong danh sách</h2>
+    <p>Cảm ơn bạn vì đã lướt tới đây.</p>
+    <p>
+        Có thể sản phẩm mà bạn đang quan tâm chưa được đề cập ở bất kì đâu trong các mặt hàng phía trên. Hãy hiểu rằng
+        mình không thể trình bày tất cả sản phẩm hiện có trên thế giới chỉ với 1 trang web nhỏ như thế này, do vậy nếu
+        sản phẩm mà bạn quan tâm chưa có trong danh sách phía trên thì cũng đừng ngại ngần mà liên hệ cho mình qua 2
+        phương thức liên hệ bên dưới nhé. Mình sẽ hỗ trợ tất cả các sản phẩm mà bạn có nhu cầu với mức giá hợp lí với sự
+        bảo hành tận tâm nhất.
+    </p>
+    <p>Xin cảm ơn bạn đã ghé thăm và ủng hộ!</p>
+</section>
+
+<!-- Liên hệ -->
+<section id="contact">
+    <h2>Liên hệ đặt hàng</h2>
+    <div class="icons">
+        <a href="https://www.facebook.com/taphoask" target="_blank">
+            <img src="{{ url_for('static', filename='images/facebook.png') }}" alt="Facebook">
+        </a>
+        <a href="https://zalo.me/0961310328" target="_blank">
+            <img src="{{ url_for('static', filename='images/zalo.png') }}" alt="Zalo">
+        </a>
+    </div>
+</section>
+
+<script>
+    function scrollToBottom(duration) {
+      const start = window.scrollY;
+      const end = document.documentElement.scrollHeight - window.innerHeight;
+      const distance = end - start;
+      let startTime = null;
+
+      function easeInOutCubic(t) {
+        return t < 0.5
+          ? 4 * t * t * t
+          : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+
+      function animation(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        const eased = easeInOutCubic(progress);
+
+        window.scrollTo(0, start + distance * eased);
+
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animation);
+        }
+      }
+
+      requestAnimationFrame(animation);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelector('.btn-contact').addEventListener('click', function(e) {
+        e.preventDefault();
+        scrollToBottom(2000); // 2 giây
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const textElement = document.getElementById("intro-text");
+      const fullText = textElement.innerHTML.trim();
+      const chars = fullText.split(""); // tách thành từng ký tự
+      let index = 0;
+      let typing;
+
+      textElement.innerHTML = ""; // reset ban đầu
+
+      function typeChars() {
+        if (index < chars.length) {
+          textElement.innerHTML += chars[index];
+          index++;
+        } else {
+          clearInterval(typing);
+        }
+      }
+
+      // gõ nhanh: mỗi 40ms hiện 1 ký tự
+      typing = setInterval(typeChars, 50);
+
+      // Khi click vào section → show full text ngay
+      document.getElementById("intro-section").addEventListener("click", () => {
+        if (typing) {
+          clearInterval(typing);   // dừng gõ
+          typing = null;
+        }
+        textElement.innerHTML = fullText; // điền luôn toàn bộ text
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const scrollDown = document.getElementById("scroll-down");
+      scrollDown.addEventListener("click", () => {
+        window.scrollBy({
+          top: window.innerHeight,   // cuộn đúng 1 màn hình
+          left: 0,
+          behavior: "smooth"
+        });
+      });
+    });
+</script>
+</body>
+</html>
