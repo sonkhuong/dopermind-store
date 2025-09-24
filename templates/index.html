@@ -37,8 +37,8 @@
         lợi và giá cả tốt nhất. Store của mình cam kết bảo hành 100% các đơn hàng được trưng bày. Nếu có sản phẩm có
         thời gian bảo hành đặc biệt, sẽ được thông tin tới quý khách hàng trước khi chốt đơn.
     </p>
-    <a href="#contact" class="btn-contact">Liên hệ ngay</a>
-    <p>Hãy bắt đầu tham khảo các sản phẩm bên dưới nhé!!!</p>
+    <a href="#contact" class="btn-contact">Liên hệ đặt hàng ngay</a>
+    <p>Hoặc bắt đầu tham khảo các sản phẩm bên dưới nhé!!!</p>
 </section>
 
 <section class="product-section">
@@ -164,6 +164,18 @@
           top: window.innerHeight,   // cuộn đúng 1 màn hình
           left: 0,
           behavior: "smooth"
+        });
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        // Bắt sự kiện click trên tất cả product-section
+      const productSections = document.querySelectorAll(".product-section");
+
+      productSections.forEach(section => {
+        section.addEventListener("click", (e) => {
+          e.preventDefault();
+          scrollToBottom(2000); // 2 giây cuộn xuống cuối
         });
       });
     });
