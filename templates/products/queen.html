@@ -1,17 +1,257 @@
 <div class="page-group" id="book-queen">
   <div class="tab-bar">
-    {% for i in range(1,5) %}
-    <div class="tab-btn {% if i==1 %}active{% endif %}" data-tab="queen-{{ i }}">
-      <img src="{{ url_for('static', filename='images/queen' ~ i ~ '.png') }}" alt="Queen{{ i }}">
+    <div class="tab-btn active" data-tab="queen-1">
+      <img src="{{ url_for('static', filename='images/queen1.png') }}" alt="GitHub Copilot" />
     </div>
-    {% endfor %}
+    <div class="tab-btn" data-tab="queen-2">
+      <img src="{{ url_for('static', filename='images/queen2.png') }}" alt="Canvas Edu/Pro" />
+    </div>
+    <div class="tab-btn" data-tab="queen-3">
+      <img src="{{ url_for('static', filename='images/queen3.png') }}" alt="Netflix Ultra 4K" />
+    </div>
+    <div class="tab-btn" data-tab="queen-4">
+      <img src="{{ url_for('static', filename='images/queen4.png') }}" alt="Spotify Premium" />
+    </div>
   </div>
-  <div class="book">
-    {% for i in range(1,5) %}
-    <div class="page {% if i==1 %}active{% endif %}" id="queen-{{ i }}">
-      <h2>Qeen #{{ i }}</h2>
-      <p>Chi tiết sản phẩm Qeen {{ i }}...</p>
+
+  <div class="page" id="queen-1">
+    <h2>GitHub Copilot Pro</h2>
+
+    <div class="menu-cards">
+      <div class="card">
+        <h3>GitHub Pro</h3>
+        <p class="price">100.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Không giới hạn sử dụng GPT-4.1</li>
+          <li>Không giới hạn fix code</li>
+          <li>Truy cập vào Anthropic Claude Sonnet 4, GPT-5, Gemini 2.5 Pro và nhiều hơn nữa</li>
+          <li>300 yêu cầu cao cấp để sử dụng các mô hình mới nhất và đánh giá mã</li>
+          <li>Bảo hành đủ thời gian sử dụng</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>GitHub Education Pack</h3>
+        <p class="price">700.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Hỗ trợ nâng chính chủ</li>
+          <li>Đầy đủ mọi tính năng của gói Pro trong 2 năm</li>
+          <li>Tặng 1 năm JetBrains Toolbox</li>
+          <li>Educative: Free hàng trăm khoá học trong 6 tháng</li>
+          <li>Digital Ocean: 200$ coupon, HSD 1 năm</li>
+          <li>Heroku: 300$ credit quản lý trang web</li>
+          <li>Namecheap: Free 1 năm tên miền</li>
+          <li>MS Azure: Free credit</li>
+          <li>MongoDB Atlas: 50$ credit</li>
+          <li>Hàng chục ưu đãi khác...</li>
+          <li>Bảo hành ít nhất 3 tháng</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Số Lượng Lớn</h3>
+        <p class="price">Giá thoả thuận</p>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
     </div>
-    {% endfor %}
+
+    <div class="page-footer">
+      <span class="note">Cần tư vấn thêm?</span>
+      <a href="javascript:void(0)" class="btn-contact btn-contact-now">Liên Hệ Ngay</a>
+    </div>
+  </div>
+
+  <div class="page" id="queen-2">
+    <h2>Canvas Edu/Pro</h2>
+
+    <div class="menu-cards">
+      <div class="card">
+        <h3>Canvas Education</h3>
+        <p class="price">100.000đ/vĩnh viễn</p>
+        <ul class="details">
+          <li>Chính chủ, gửi địa chỉ email để nâng</li>
+          <li>Thư viện tài nguyên phong phú</li>
+          <li>Tích hợp Learning Management System</li>
+          <li>Tích hợp các công cụ học tập</li>
+          <li>Các tính năng của Canvas Pro</li>
+          <li>Dung lượng lưu trữ lớn</li>
+          <li>Bảo hành ít nhất 1 năm</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Canvas Pro</h3>
+        <p class="price">400.000đ/vĩnh viễn</p>
+        <ul class="details">
+          <li>Chính chủ, gửi địa chỉ email để nâng</li>
+          <li>Thư viện tài nguyên cao cấp</li>
+          <li>Mẫu thiết kế chuyên nghiệp</li>
+          <li>Xoá nền, maigc studio, maigc eraser</li>
+          <li>Công cụ tạo thương hiệu</li>
+          <li>Tích hợp ứng dụng, lên lịch đăng bài</li>
+          <li>Chỉnh sửa video chuyên nghiệp</li>
+          <li>Dung lượng lưu trữ lớn</li>
+          <li>Bảo hành ít nhất 1 năm</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Số Lượng Lớn</h3>
+        <p class="price">Giá thoả thuận</p>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span class="note">Cần tư vấn thêm?</span>
+      <a href="javascript:void(0)" class="btn-contact btn-contact-now">Liên Hệ Ngay</a>
+    </div>
+  </div>
+
+  <div class="page" id="queen-3">
+    <h2>Netflix Premium Ultra 4K - Bảo hành Fulltime</h2>
+
+    <div class="menu-cards">
+      <div class="card">
+        <h3>Ultra 4K 1 tháng</h3>
+        <p class="price">50.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Riêng profile, có thể đổi PIN</li>
+          <li>Chất lượng hình ảnh 4K Ultra HD</li>
+          <li>Âm thanh vòm 5.1</li>
+          <li>Tải xuống xem ngoại tuyến</li>
+          <li>Kho nội dung phong phú</li>
+          <li>Hỗ trợ đa ngôn ngữ</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Ultra 4K 3 tháng</h3>
+        <p class="price">140.000đ/3 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Riêng profile, có thể đổi PIN</li>
+          <li>Chất lượng hình ảnh 4K Ultra HD</li>
+          <li>Âm thanh vòm 5.1</li>
+          <li>Tải xuống xem ngoại tuyến</li>
+          <li>Kho nội dung phong phú</li>
+          <li>Hỗ trợ đa ngôn ngữ</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Ultra 4K 6 tháng</h3>
+        <p class="price">250.000đ/6 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Riêng profile, có thể đổi PIN</li>
+          <li>Chất lượng hình ảnh 4K Ultra HD</li>
+          <li>Âm thanh vòm 5.1</li>
+          <li>Tải xuống xem ngoại tuyến</li>
+          <li>Kho nội dung phong phú</li>
+          <li>Hỗ trợ đa ngôn ngữ</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Ultra 4K 12 tháng</h3>
+        <p class="price">460.000đ/12 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Riêng profile, có thể đổi PIN</li>
+          <li>Chất lượng hình ảnh 4K Ultra HD</li>
+          <li>Âm thanh vòm 5.1</li>
+          <li>Tải xuống xem ngoại tuyến</li>
+          <li>Kho nội dung phong phú</li>
+          <li>Hỗ trợ đa ngôn ngữ</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span class="note">Cần tư vấn thêm?</span>
+      <a href="javascript:void(0)" class="btn-contact btn-contact-now">Liên Hệ Ngay</a>
+    </div>
+  </div>
+
+  <div class="page" id="queen-4">
+    <h2>Sptotify Premium - Bảo hành Fulltime</h2>
+
+    <div class="menu-cards">
+      <div class="card">
+        <h3>Premium 1 tháng</h3>
+        <p class="price">60.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Chính chủ, gửi địa chỉ email để nâng</li>
+          <li>Nghe nhạc không quảng cáo</li>
+          <li>Chất lượng âm thanh lossless</li>
+          <li>Nghe bất kì bài hát nào</li>
+          <li>Điều chỉnh danh sách phát</li>
+          <li>Nghe nhạc ngoại tuyến</li>
+          <li>Chia sẻ cho bạn bè trên nhiều thiết bị</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Premium 3 tháng</h3>
+        <p class="price">115.000đ/3 tháng</p>
+        <ul class="details">
+          <li>Chính chủ, gửi địa chỉ email để nâng</li>
+          <li>Nghe nhạc không quảng cáo</li>
+          <li>Chất lượng âm thanh lossless</li>
+          <li>Nghe bất kì bài hát nào</li>
+          <li>Điều chỉnh danh sách phát</li>
+          <li>Nghe nhạc ngoại tuyến</li>
+          <li>Chia sẻ cho bạn bè trên nhiều thiết bị</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Premium 6 tháng</h3>
+        <p class="price">180.000đ/6 tháng</p>
+        <ul class="details">
+          <li>Chính chủ, gửi địa chỉ email để nâng</li>
+          <li>Nghe nhạc không quảng cáo</li>
+          <li>Chất lượng âm thanh lossless</li>
+          <li>Nghe bất kì bài hát nào</li>
+          <li>Điều chỉnh danh sách phát</li>
+          <li>Nghe nhạc ngoại tuyến</li>
+          <li>Chia sẻ cho bạn bè trên nhiều thiết bị</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Premium 12 tháng</h3>
+        <p class="price">280.000đ/12 tháng</p>
+        <ul class="details">
+          <li>Chính chủ, gửi địa chỉ email để nâng</li>
+          <li>Nghe nhạc không quảng cáo</li>
+          <li>Chất lượng âm thanh lossless</li>
+          <li>Nghe bất kì bài hát nào</li>
+          <li>Điều chỉnh danh sách phát</li>
+          <li>Nghe nhạc ngoại tuyến</li>
+          <li>Chia sẻ cho bạn bè trên nhiều thiết bị</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span class="note">Cần tư vấn thêm?</span>
+      <a href="javascript:void(0)" class="btn-contact btn-contact-now">Liên Hệ Ngay</a>
+    </div>
   </div>
 </div>

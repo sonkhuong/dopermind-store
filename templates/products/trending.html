@@ -1,17 +1,617 @@
 <div class="page-group" id="book-trending">
   <div class="tab-bar">
-    {% for i in range(1,8) %}
-    <div class="tab-btn {% if i==1 %}active{% endif %}" data-tab="trending-{{ i }}">
-      <img src="{{ url_for('static', filename='images/trending' ~ i ~ '.png') }}" alt="Trending{{ i }}">
+    <div class="tab-btn active" data-tab="trending-1">
+      <img src="{{ url_for('static', filename='images/trending1.png') }}" alt="Capcut Pro" />
     </div>
-    {% endfor %}
+    <div class="tab-btn" data-tab="trending-2">
+      <img src="{{ url_for('static', filename='images/trending2.png') }}" alt="Cursor AI Pro" />
+    </div>
+    <div class="tab-btn" data-tab="trending-3">
+      <img src="{{ url_for('static', filename='images/trending3.png') }}" alt="SuperGrok /Heavy" />
+    </div>
+    <div class="tab-btn" data-tab="trending-4">
+      <img src="{{ url_for('static', filename='images/trending4.png') }}" alt="Office License" />
+    </div>
+    <div class="tab-btn" data-tab="trending-5">
+      <img src="{{ url_for('static', filename='images/trending5.png') }}" alt="Midjourney AI Pro" />
+    </div>
+    <div class="tab-btn" data-tab="trending-6">
+      <img src="{{ url_for('static', filename='images/trending6.png') }}" alt="Zoom Meeting Pro" />
+    </div>
+    <div class="tab-btn" data-tab="trending-7">
+      <img src="{{ url_for('static', filename='images/trending7.png') }}" alt="Elsa Pro/Premium" />
+    </div>
   </div>
-  <div class="book">
-    {% for i in range(1,8) %}
-    <div class="page {% if i==1 %}active{% endif %}" id="trending-{{ i }}">
-      <h2>Trending #{{ i }}</h2>
-      <p>Chi tiết sản phẩm Trending {{ i }}...</p>
+
+  <div class="page" id="trending-1">
+    <h2>Capcut Pro - Bảo hành Fulltime</h2>
+
+    <div class="menu-cards">
+      <div class="card">
+        <h3>Capcut Pro 1 tháng</h3>
+        <p class="price">60.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, được đổi pass</li>
+          <li>Hỗ trợ đổi mật khẩu</li>
+          <li>Sử dụng tối đa 5 thiết bị</li>
+          <li>Kho tài nguyên khổng lồ</li>
+          <li>Tạo video AI, xoá nền, vật thể</li>
+          <li>Cải thiện chất lượng video</li>
+          <li>Xuất video chất lượng 4K</li>
+          <li>Lưu trữ đám mây</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Capcut Pro 3 tháng</h3>
+        <p class="price">150.000đ/3 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, được đổi pass</li>
+          <li>Hỗ trợ đổi mật khẩu</li>
+          <li>Sử dụng tối đa 5 thiết bị</li>
+          <li>Kho tài nguyên khổng lồ</li>
+          <li>Tạo video AI, xoá nền, vật thể</li>
+          <li>Cải thiện chất lượng video</li>
+          <li>Xuất video chất lượng 4K</li>
+          <li>Lưu trữ đám mây</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Capcut Pro 6 tháng</h3>
+        <p class="price">250.000đ/6 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, được đổi pass</li>
+          <li>Hỗ trợ đổi mật khẩu</li>
+          <li>Sử dụng tối đa 5 thiết bị</li>
+          <li>Kho tài nguyên khổng lồ</li>
+          <li>Tạo video AI, xoá nền, vật thể</li>
+          <li>Cải thiện chất lượng video</li>
+          <li>Xuất video chất lượng 4K</li>
+          <li>Lưu trữ đám mây</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Capcut Pro 12 tháng</h3>
+        <p class="price">400.000đ/12 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, được đổi pass</li>
+          <li>Hỗ trợ đổi mật khẩu</li>
+          <li>Sử dụng tối đa 5 thiết bị</li>
+          <li>Kho tài nguyên khổng lồ</li>
+          <li>Tạo video AI, xoá nền, vật thể</li>
+          <li>Cải thiện chất lượng video</li>
+          <li>Xuất video chất lượng 4K</li>
+          <li>Lưu trữ đám mây</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Số Lượng Lớn</h3>
+        <p class="price">Giá thoả thuận</p>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
     </div>
-    {% endfor %}
+
+    <div class="page-footer">
+      <span class="note">Cần tư vấn thêm?</span>
+      <a href="javascript:void(0)" class="btn-contact btn-contact-now">Liên Hệ Ngay</a>
+    </div>
+  </div>
+
+  <div class="page" id="trending-2">
+    <h2>Cursor AI Pro - Bảo hành Fulltime</h2>
+
+    <div class="menu-cards">
+      <div class="card">
+        <h3>Cursor AI 1 tháng</h3>
+        <p class="price">150.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Sửa mã không giới hạn</li>
+          <li>Sử dụng các mô hình AI tiên tiến</li>
+          <li>Tạo code bằng ngôn ngữ tự nhiên</li>
+          <li>Max Mode xử lý ngữ cảnh phức tạp</li>
+          <li>500 fast premium requests/tháng</li>
+          <li>Tích hợp IDE</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Cursor AI 3 tháng</h3>
+        <p class="price">400.000đ/3 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Sửa mã không giới hạn</li>
+          <li>Sử dụng các mô hình AI tiên tiến</li>
+          <li>Tạo code bằng ngôn ngữ tự nhiên</li>
+          <li>Max Mode xử lý ngữ cảnh phức tạp</li>
+          <li>500 fast premium requests/tháng</li>
+          <li>Tích hợp IDE</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Cursor AI 6 tháng</h3>
+        <p class="price">700.000đ/6 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Sửa mã không giới hạn</li>
+          <li>Sử dụng các mô hình AI tiên tiến</li>
+          <li>Tạo code bằng ngôn ngữ tự nhiên</li>
+          <li>Max Mode xử lý ngữ cảnh phức tạp</li>
+          <li>500 fast premium requests/tháng</li>
+          <li>Tích hợp IDE</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Cursor AI 12 tháng</h3>
+        <p class="price">1200.000đ/12 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Sửa mã không giới hạn</li>
+          <li>Sử dụng các mô hình AI tiên tiến</li>
+          <li>Tạo code bằng ngôn ngữ tự nhiên</li>
+          <li>Max Mode xử lý ngữ cảnh phức tạp</li>
+          <li>500 fast premium requests/tháng</li>
+          <li>Tích hợp IDE</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Số Lượng Lớn</h3>
+        <p class="price">Giá thoả thuận</p>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span class="note">Cần tư vấn thêm?</span>
+      <a href="javascript:void(0)" class="btn-contact btn-contact-now">Liên Hệ Ngay</a>
+    </div>
+  </div>
+
+  <div class="page" id="trending-3">
+    <h2>SuperGrok /Heavy - Bảo hành Fulltime</h2>
+
+    <div class="menu-cards">
+      <div class="card">
+        <h3>SuperGrok 1 tháng</h3>
+        <p class="price">450.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Chính chủ, gửi email + pass để nâng</li>
+          <li>Truy cập Grok 3,4, thay thế Think và DeepSearch</li>
+          <li>Bộ nhớ mở rộng 128.000 token</li>
+          <li>Ưu tiên truy cập bằng giọng nói</li>
+          <li>Mô hình hình ảnh Imagine</li>
+          <li>Bạn đồng hành Ani và Valentine</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>SuperGrok 1 tháng</h3>
+        <p class="price">150.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Truy cập Grok 3,4, thay thế Think và DeepSearch</li>
+          <li>Bộ nhớ mở rộng 128.000 token</li>
+          <li>Ưu tiên truy cập bằng giọng nói</li>
+          <li>Mô hình hình ảnh Imagine</li>
+          <li>Bạn đồng hành Ani và Valentine</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>SuperGrok 3 tháng</h3>
+        <p class="price">400.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Truy cập Grok 3,4, thay thế Think và DeepSearch</li>
+          <li>Bộ nhớ mở rộng 128.000 token</li>
+          <li>Ưu tiên truy cập bằng giọng nói</li>
+          <li>Mô hình hình ảnh Imagine</li>
+          <li>Bạn đồng hành Ani và Valentine</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>SuperGrok 6 tháng</h3>
+        <p class="price">700.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Truy cập Grok 3,4, thay thế Think và DeepSearch</li>
+          <li>Bộ nhớ mở rộng 128.000 token</li>
+          <li>Ưu tiên truy cập bằng giọng nói</li>
+          <li>Mô hình hình ảnh Imagine</li>
+          <li>Bạn đồng hành Ani và Valentine</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>SuperGrok Heavy 1T</h3>
+        <p class="price">400.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Truy cập Grok 3,4, thay thế Think và DeepSearch</li>
+          <li>Bộ nhớ mở rộng 128.000 token</li>
+          <li>Ưu tiên truy cập bằng giọng nói</li>
+          <li>Mô hình hình ảnh Imagine</li>
+          <li>Bạn đồng hành Ani và Valentine</li>
+          <li>Ưu tiên sử dụng các tính năng mới nhất</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>SuperGrok Heavy 12T</h3>
+        <p class="price">2.500.000đ/12 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Truy cập Grok 3,4, thay thế Think và DeepSearch</li>
+          <li>Bộ nhớ mở rộng 256.000 token</li>
+          <li>Ưu tiên truy cập bằng giọng nói</li>
+          <li>Mô hình hình ảnh Imagine</li>
+          <li>Bạn đồng hành Ani và Valentine</li>
+          <li>Ưu tiên sử dụng các tính năng mới nhất</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span class="note">Cần tư vấn thêm?</span>
+      <a href="javascript:void(0)" class="btn-contact btn-contact-now">Liên Hệ Ngay</a>
+    </div>
+  </div>
+
+  <div class="page" id="trending-4">
+    <h2>Office License - Bảo hành Active</h2>
+
+    <div class="menu-cards">
+      <div class="card">
+        <h3>MS 365 + Onedrive</h3>
+        <p class="price">50.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Chính chủ, gửi email + pass để nâng</li>
+          <li>OneDrive 1TB</li>
+          <li>Đầy đủ ứng dụng của Office</li>
+          <li>Microsoft Copilot</li>
+          <li>Các công cụ và ứng dụng cập nhật liên tục</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>MS 365 + Onedrive</h3>
+        <p class="price">300.000đ/1 năm</p>
+        <ul class="details">
+          <li>Chính chủ, gửi email + pass để nâng</li>
+          <li>OneDrive 1TB</li>
+          <li>Đầy đủ ứng dụng của Office</li>
+          <li>Microsoft Copilot</li>
+          <li>Các công cụ và ứng dụng cập nhật liên tục</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Key 2016 Pro</h3>
+        <p class="price">150.000đ/vĩnh viễn</p>
+        <ul class="details">
+          <li>Chính chủ, gửi email + pass để nâng</li>
+          <li>OneDrive cá nhân 5GB</li>
+          <li>Các ứng dụng văn phòng</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Key 2019 Pro</h3>
+        <p class="price">200.000đ/vĩnh viễn</p>
+        <ul class="details">
+          <li>Chính chủ, gửi email + pass để nâng</li>
+          <li>OneDrive cá nhân 5GB</li>
+          <li>Các ứng dụng văn phòng</li>
+          <li>Các ứng dụng và hiệu ứng 2D, 3D</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Key 2021 Pro</h3>
+        <p class="price">250.000đ/vĩnh viễn</p>
+        <ul class="details">
+          <li>Chính chủ, gửi email + pass để nâng</li>
+          <li>OneDrive cá nhân 5GB</li>
+          <li>Các ứng dụng văn phòng</li>
+          <li>Các ứng dụng và hiệu ứng 2D, 3D</li>
+          <li>Chế độ darkmode</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Key 2024 Pro</h3>
+        <p class="price">300.000đ/vĩnh viễn</p>
+        <ul class="details">
+          <li>Chính chủ, gửi email + pass để nâng</li>
+          <li>OneDrive cá nhân 5GB</li>
+          <li>Các ứng dụng văn phòng</li>
+          <li>Các ứng dụng và hiệu ứng 2D, 3D</li>
+          <li>Chế độ darkmode</li>
+          <li>Thêm các tính năng AI hiện đại</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span class="note">Cần tư vấn thêm?</span>
+      <a href="javascript:void(0)" class="btn-contact btn-contact-now">Liên Hệ Ngay</a>
+    </div>
+  </div>
+
+  <div class="page" id="trending-5">
+    <h2>Midjourney AI Pro - Bảo hành Fulltime</h2>
+
+    <div class="menu-cards">
+      <div class="card">
+        <h3>Hạng Pro 1 tháng</h3>
+        <p class="price">180.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Tạo hình ảnh AI không giới hạn</li>
+          <li>Truy cập kho và tính năng cao cấp</li>
+          <li>Xử lý nhiều tác vụ đồng thời, tạo số lượng lớn</li>
+          <li>Tốc độ tạo hình ảnh cao</li>
+          <li>Ưu tiên hỗ trợ nếu có vấn đề từ support team</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Hạng Pro 3 tháng</h3>
+        <p class="price">450.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Tạo hình ảnh AI không giới hạn</li>
+          <li>Truy cập kho và tính năng cao cấp</li>
+          <li>Xử lý nhiều tác vụ đồng thời, tạo số lượng lớn</li>
+          <li>Tốc độ tạo hình ảnh cao</li>
+          <li>Ưu tiên hỗ trợ nếu có vấn đề từ support team</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Hạng Pro 6 tháng</h3>
+        <p class="price">700.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Tạo hình ảnh AI không giới hạn</li>
+          <li>Truy cập kho và tính năng cao cấp</li>
+          <li>Xử lý nhiều tác vụ đồng thời, tạo số lượng lớn</li>
+          <li>Tốc độ tạo hình ảnh cao</li>
+          <li>Ưu tiên hỗ trợ nếu có vấn đề từ support team</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Hạng Pro 12 tháng</h3>
+        <p class="price">1.100.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Tạo hình ảnh AI không giới hạn</li>
+          <li>Truy cập kho và tính năng cao cấp</li>
+          <li>Xử lý nhiều tác vụ đồng thời, tạo số lượng lớn</li>
+          <li>Tốc độ tạo hình ảnh cao</li>
+          <li>Ưu tiên hỗ trợ nếu có vấn đề từ support team</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Hạng Pro 36 tháng</h3>
+        <p class="price">2.500.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Tạo hình ảnh AI không giới hạn</li>
+          <li>Truy cập kho và tính năng cao cấp</li>
+          <li>Xử lý nhiều tác vụ đồng thời, tạo số lượng lớn</li>
+          <li>Tốc độ tạo hình ảnh cao</li>
+          <li>Ưu tiên hỗ trợ nếu có vấn đề từ support team</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span class="note">Cần tư vấn thêm?</span>
+      <a href="javascript:void(0)" class="btn-contact btn-contact-now">Liên Hệ Ngay</a>
+    </div>
+  </div>
+
+  <div class="page" id="trending-6">
+    <h2>Zoom Pro - Bảo hành Fulltime</h2>
+
+    <div class="menu-cards">
+      <div class="card">
+        <h3>100 người - 1 tháng</h3>
+        <p class="price">150.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Chính chủ, gửi email + password để nâng</li>
+          <li>Tối đa 100 người họp mặt</li>
+          <li>Tối đa 30 giờ mỗi cuộc họp</li>
+          <li>10GB record lưu trữ đám mây</li>
+          <li>Khôi giới hạn tài liệu, video</li>
+          <li>Tự động hoá quy trình làm việc</li>
+          <li>Tự động hoá tác vụ hằng ngày</li>
+          <li>Sử dụng các ứng dụng cao cấp</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>100 người - 3 tháng</h3>
+        <p class="price">400.000đ/3 tháng</p>
+        <ul class="details">
+          <li>Chính chủ, gửi email + password để nâng</li>
+          <li>Tối đa 100 người họp mặt</li>
+          <li>Tối đa 30 giờ mỗi cuộc họp</li>
+          <li>10GB record lưu trữ đám mây</li>
+          <li>Khôi giới hạn tài liệu, video</li>
+          <li>Tự động hoá quy trình làm việc</li>
+          <li>Tự động hoá tác vụ hằng ngày</li>
+          <li>Sử dụng các ứng dụng cao cấp</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>100 người - 12 tháng</h3>
+        <p class="price">1.150.000đ/12 tháng</p>
+        <ul class="details">
+          <li>Chính chủ, gửi email + password để nâng</li>
+          <li>Tối đa 100 người họp mặt</li>
+          <li>Tối đa 30 giờ mỗi cuộc họp</li>
+          <li>10GB record lưu trữ đám mây</li>
+          <li>Khôi giới hạn tài liệu, video</li>
+          <li>Tự động hoá quy trình làm việc</li>
+          <li>Tự động hoá tác vụ hằng ngày</li>
+          <li>Sử dụng các ứng dụng cao cấp</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Số Lượng Lớn</h3>
+        <p class="price">Giá thoả thuận</p>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span class="note">Cần tư vấn thêm?</span>
+      <a href="javascript:void(0)" class="btn-contact btn-contact-now">Liên Hệ Ngay</a>
+    </div>
+  </div>
+
+  <div class="page" id="trending-7">
+    <h2>Elsa Premium/Pro - Bảo hành Fulltime</h2>
+
+    <div class="menu-cards">
+      <div class="card">
+        <h3>Premium - 3 tháng</h3>
+        <p class="price">650.000đ/3 tháng</p>
+        <ul class="details">
+          <li>Chính chủ, gửi email + password để nâng</li>
+          <li>Tất cả tính năng của Pro</li>
+          <li>Elsa AI luyện nói thông minh</li>
+          <li>Elsa Speech Analyzer</li>
+          <li>Khoá học chuyên sâu</li>
+          <li>Đa dạng giọng nói</li>
+          <li>Từ điển elsa</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Pro - 12 tháng</h3>
+        <p class="price">550.000đ/12 tháng</p>
+        <ul class="details">
+          <li>Chính chủ, gửi email + password để nâng</li>
+          <li>Elsa AI luyện nói thông minh</li>
+          <li>Elsa Speech Analyzer</li>
+          <li>Học toàn diện</li>
+          <li>Hỗ trợ luyện thi chứng chỉ</li>
+          <li>Chấm điểm, đánh giá kỹ năng</li>
+          <li>Phân tích phát âm chi tiết</li>
+          <li>Nội dung đa dạng</li>
+          <li>Lộ trình học được cá nhân hoá</li>
+          <li>Học không quảng cáo</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Premium - 1 tháng</h3>
+        <p class="price">200.000đ/1 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Tất cả tính năng của Pro</li>
+          <li>Elsa AI luyện nói thông minh</li>
+          <li>Elsa Speech Analyzer</li>
+          <li>Khoá học chuyên sâu</li>
+          <li>Đa dạng giọng nói</li>
+          <li>Từ điển elsa</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Premium - 3 tháng</h3>
+        <p class="price">500.000đ/3 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Tất cả tính năng của Pro</li>
+          <li>Elsa AI luyện nói thông minh</li>
+          <li>Elsa Speech Analyzer</li>
+          <li>Khoá học chuyên sâu</li>
+          <li>Đa dạng giọng nói</li>
+          <li>Từ điển elsa</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Premium - 6 tháng</h3>
+        <p class="price">800.000đ/6 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Tất cả tính năng của Pro</li>
+          <li>Elsa AI luyện nói thông minh</li>
+          <li>Elsa Speech Analyzer</li>
+          <li>Khoá học chuyên sâu</li>
+          <li>Đa dạng giọng nói</li>
+          <li>Từ điển elsa</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Premium - 12 tháng</h3>
+        <p class="price">1.200.000đ/12 tháng</p>
+        <ul class="details">
+          <li>Tài khoản đăng ký sẵn, không đổi pass</li>
+          <li>Tất cả tính năng của Pro</li>
+          <li>Elsa AI luyện nói thông minh</li>
+          <li>Elsa Speech Analyzer</li>
+          <li>Khoá học chuyên sâu</li>
+          <li>Đa dạng giọng nói</li>
+          <li>Từ điển elsa</li>
+        </ul>
+        <a href="#contact" class="btn-buy">Đặt hàng qua Facebook</a>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span class="note">Cần tư vấn thêm?</span>
+      <a href="javascript:void(0)" class="btn-contact btn-contact-now">Liên Hệ Ngay</a>
+    </div>
   </div>
 </div>
