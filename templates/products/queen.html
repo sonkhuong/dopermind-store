@@ -1,0 +1,17 @@
+<div class="page-group" id="book-queen">
+  <div class="tab-bar">
+    {% for i in range(1,5) %}
+    <div class="tab-btn {% if i==1 %}active{% endif %}" data-tab="queen-{{ i }}">
+      <img src="{{ url_for('static', filename='images/queen' ~ i ~ '.png') }}" alt="Queen{{ i }}">
+    </div>
+    {% endfor %}
+  </div>
+  <div class="book">
+    {% for i in range(1,5) %}
+    <div class="page {% if i==1 %}active{% endif %}" id="queen-{{ i }}">
+      <h2>Qeen #{{ i }}</h2>
+      <p>Chi tiết sản phẩm Qeen {{ i }}...</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

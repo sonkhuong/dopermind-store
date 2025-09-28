@@ -1,267 +1,560 @@
-/* Video background */
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap');
+
+/* ================= Video background ================= */
 #bg-video {
-  position: fixed;     /* cố định khi scroll */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;   /* lấp đầy màn hình mà không méo hình */
-  z-index: -1;         /* nằm dưới toàn bộ nội dung */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.3); /* đen mờ 40% */
-  z-index: -1; /* nằm giữa video và nội dung */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
 }
 
-/* Section mặc định */
+/* ================= Section mặc định ================= */
 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 15px 15px;
-  min-height: 100vh;  /* mỗi section khác chiếm 1 màn hình */
-  box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 15px;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
+section h2 {
+    font-family: 'Be Vietnam Pro', 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* ================= Store banner ================= */
 #store-banner {
-  width: 100%;
-  padding: 60px 20px 40px; /* khoảng cách trên dưới */
-  text-align: center;
-  background: transparent; /* bỏ nền cam, dùng nền web */
+    width: 100%;
+    padding: 60px 20px 40px;
+    text-align: center;
+    background: transparent;
 }
 
-/* Tiêu đề nhỏ */
 #store-banner h3 {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-weight: 800;
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #ffffff;
-  letter-spacing: 4px;
-  margin-bottom: 15px;
-
-  -webkit-text-stroke: 1px black;
-  text-shadow:
-    2px 2px 6px rgba(0,0,0,0.9),
-    0 0 15px rgba(255,255,255,0.5);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
-/* Tiêu đề lớn */
 #store-banner h1 {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-weight: 800;
-  font-size: 4rem;   /* to hơn các section h2 */
-  text-transform: uppercase;
-  color: #ffffff;
-  letter-spacing: 6px;
-
-  -webkit-text-stroke: 1px black;
-  text-shadow:
-    2px 2px 6px rgba(0,0,0,0.9),
-    0 0 15px rgba(255,255,255,0.5);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 6px;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
+/* ================= Buttons ================= */
 .btn-contact {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 30px;
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #ff6f61;
-  border-radius: 8px;
-  box-shadow: 2px 4px 10px rgba(0,0,0,0.6);
-  transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ff6f61;
+    border-radius: 8px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
 }
 
 .btn-contact:hover {
-  background: #d72638;
-  transform: scale(1.05);
-  box-shadow: 3px 6px 14px rgba(0,0,0,0.8);
+    background: #d72638;
+    transform: scale(1.05);
+    box-shadow: 3px 6px 14px rgba(0, 0, 0, 0.8);
 }
 
-/* Liên hệ */
+.btn-contact.btn-contact-now {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background: #20c997;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    line-height: 1;
+    margin-left: 15px;
+}
+
+
+.btn-contact.btn-contact-now:hover {
+    background: #17a2b8;
+    transform: scale(1.05);
+}
+
+.btn-buy {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #ff6f61;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-buy:hover {
+    background: #d72638;
+}
+
+/* ================= Contact section ================= */
 #contact {
-  width: 100%;
-  height: 25vh;             /* 1/8 màn hình */
-  min-height: unset;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin-bottom: 100px;
-  box-sizing: border-box;
+    width: 100%;
+    height: 25vh;
+    min-height: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 100px;
+    box-sizing: border-box;
 }
 
 #contact h2 {
-  margin: 30px 0;
+    margin: 30px 0;
 }
 
 #contact .icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 #contact .icons img {
-  width: 20vh;
-  cursor: pointer;
-  transition: transform 0.3s, filter 0.3s;
-  filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.8)); /* đổ bóng icon */
-}
-#contact .icons img:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(4px 4px 10px rgba(0,0,0,1)); /* bóng mạnh hơn khi hover */
+    width: 20vh;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.8));
 }
 
-/* Sản phẩm */
+#contact .icons img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 1));
+}
+
+/* ================= Product section ================= */
 .product-section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 30vh;
-  box-sizing: border-box;
-  cursor: pointer; /* trỏ chuột thành bàn tay */
-  margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 30vh;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-bottom: 40px;
 }
 
 .product-section img {
-  display: block;
-  margin: 0 auto;
-  max-width: 85vw;
-  max-height: 85vh;
-  width: auto;
-  height: auto;
-  filter: drop-shadow(2px 4px 8px rgba(0,0,0,0.7));
-  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
-  opacity: 0.9; /* giảm xuống 50% */
+    display: block;
+    margin: 0 auto;
+    max-width: 85vw;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.7));
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+    opacity: 0.9;
 }
 
 .product-section h2 {
-  font-family: 'Be Vietnam Pro', 'Poppins', sans-serif;
-  font-weight: 800;
-  font-size: 2.8rem;
-  text-transform: uppercase;
-  color: #ffffff;
-  letter-spacing: 10px;
-  margin: 20px 0;
-  -webkit-text-stroke: 1px black;
-  text-shadow:
-    2px 2px 6px rgba(0,0,0,0.9),
-    0 0 15px rgba(255,255,255,0.5);
-  transition: transform 0.3s ease, text-shadow 0.3s ease;
+    font-family: 'Be Vietnam Pro', 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 10px;
+    margin: 20px 0;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* Hover toàn section */
 .product-section:hover img {
-  transform: scale(1.05);
-  filter: drop-shadow(4px 6px 12px rgba(0,0,0,0.9));
+    transform: scale(1.05);
+    filter: drop-shadow(4px 6px 12px rgba(0, 0, 0, 0.9));
 }
 
 .product-section:hover h2 {
-  transform: scale(1.05);
-  text-shadow:
-    3px 3px 10px rgba(0,0,0,1),
-    0 0 20px rgba(255,255,255,0.8);
+    transform: scale(1.05);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1), 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap');
-
-section h2 {
-  font-family: 'Be Vietnam Pro', 'Poppins', sans-serif;
-  font-weight: 800;
-  font-size: 2.8rem;
-  text-transform: uppercase;
-  color: #ffffff;
-  letter-spacing: 4px;
-  margin-bottom: 20px;
-
-  -webkit-text-stroke: 1px black;
-  text-stroke: 1px black;
-  text-shadow:
-    2px 2px 6px rgba(0,0,0,0.9),
-    0 0 15px rgba(255,255,255,0.5);
-}
-
-/* Product-section override */
-.product-section h2 {
-  letter-spacing: 10px;
-}
-
+/* ================= Info section ================= */
 .info-section {
-  width: 100%;
-  min-height: auto;
-  padding: 40px 20px;
-  margin-top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* giữ h2 và nút ở giữa */
-  box-sizing: border-box;
+    width: 100%;
+    min-height: auto;
+    padding: 40px 20px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .info-section h2 {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-weight: 800;
-  font-size: 2.5rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  -webkit-text-stroke: 1px black;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .info-section p {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: 1.2rem;
-  color: #f0f0f0;
-  max-width: 800px;          /* không quá rộng */
-  line-height: 1.8;
-  text-align: justify;       /* căn đều 2 bên */
-  text-justify: inter-word;  /* phân bổ đều khoảng trắng */
-  margin-bottom: 20px;       /* tạo khoảng cách giữa các đoạn */
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    max-width: 800px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 #intro-text {
-  overflow: hidden;
-  white-space: normal;
-  display: inline-block;
+    overflow: hidden;
+    white-space: normal;
+    display: inline-block;
 }
 
-/* Scroll down icon */
+/* ================= Scroll down ================= */
 .scroll-down {
-  margin-top: 20px;
-  font-size: 2.5rem;          /* kích thước icon */
-  color: #fff;
-  cursor: pointer;
-  animation: bounce 1.5s infinite; /* hiệu ứng nhảy */
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(10px);
+    }
+
+    60% {
+        transform: translateY(5px);
+    }
+}
+
+/* ================= Floating toggle/contact ================= */
+.floating-toggle {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vh;
+    width: 15vh;
+    height: 15vh;
+    cursor: pointer;
+    z-index: 2000;
+    transition: transform 0.3s ease;
+}
+
+.floating-toggle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.floating-toggle:hover {
+    transform: scale(1.1);
+}
+
+.floating-contact {
+    position: fixed;
+    bottom: calc(15vh + 3vh);
+    right: 2vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    z-index: 2000;
+    opacity: 0;
+    transform: translateY(5vh);
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.floating-contact.show {
+    opacity: 1;
     transform: translateY(0);
-  }
-  40% {
-    transform: translateY(10px);
-  }
-  60% {
-    transform: translateY(5px);
-  }
+    pointer-events: auto;
+}
+
+.floating-contact a img {
+    width: 15vh;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.8));
+}
+
+.floating-contact a img:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 1));
+}
+
+/* ================= Modal ================= */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 95vw;
+    max-height: 95vh;
+    position: relative;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.all-pages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.page-group {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.page-group.active {
+    display: flex;
+}
+
+.page-group.active {
+    display: flex;
+}
+
+.page {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    /* 👈 thêm padding cho khoảng cách */
+    box-sizing: border-box;
+    /* đảm bảo padding không phá layout */
+}
+
+.page.active {
+    display: flex;
+    /* bật hiển thị khi active */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s;
+    z-index: 10;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
+    color: #d72638;
+}
+
+/* ================= Tabs ================= */
+.tab-bar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    width: 60px;
+    height: 60px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 0.3s;
+}
+
+.tab-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tab-btn.active {
+    border: 2px solid #ff6f61;
+}
+
+/* ================= Extra components ================= */
+.book {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    perspective: 1200px;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.price-table th, .price-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.price-table th {
+    background: #ff6f61;
+    color: #fff;
+}
+
+.price-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.menu-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    /* thêm bóng cho card */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #222;
+}
+
+.card .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d72638;
+    margin-bottom: 10px;
+}
+
+.card .details {
+    text-align: left;
+    margin: 10px 0 15px;
+    padding-left: 18px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.card .details li {
+    margin-bottom: 6px;
+    list-style-type: disc;
+}
+
+.card .btn-buy {
+    margin-top: auto;
+    /* đẩy nút xuống cuối card */
+    align-self: center;
+    /* căn giữa ngang */
+}
+
+/* ================= Footer ================= */
+.page-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.page-footer .note {
+    color: #333;
+    font-weight: 500;
+    line-height: 1.2;
 }

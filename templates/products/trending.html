@@ -1,0 +1,17 @@
+<div class="page-group" id="book-trending">
+  <div class="tab-bar">
+    {% for i in range(1,8) %}
+    <div class="tab-btn {% if i==1 %}active{% endif %}" data-tab="trending-{{ i }}">
+      <img src="{{ url_for('static', filename='images/trending' ~ i ~ '.png') }}" alt="Trending{{ i }}">
+    </div>
+    {% endfor %}
+  </div>
+  <div class="book">
+    {% for i in range(1,8) %}
+    <div class="page {% if i==1 %}active{% endif %}" id="trending-{{ i }}">
+      <h2>Trending #{{ i }}</h2>
+      <p>Chi tiết sản phẩm Trending {{ i }}...</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
