@@ -66,7 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (title.includes("KING")) targetGroup = document.getElementById("book-king");
             else if (title.includes("QUEEN")) targetGroup = document.getElementById("book-queen");
             else if (title.includes("TRENDING")) targetGroup = document.getElementById("book-trending");
-            else targetGroup = document.getElementById("book-other");
+            else if (title.includes("RELATED")) targetGroup = document.getElementById("book-other");
+            else targetGroup = document.getElementById("book-another");
 
             if (targetGroup) {
                 targetGroup.classList.add("active");
