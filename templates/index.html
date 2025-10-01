@@ -32,6 +32,7 @@
           {% include 'products/queen.html' %}
           {% include 'products/trending.html' %}
           {% include 'products/other.html' %}
+          {% include 'products/another.html' %}
         </div>
       </div>
     </div>
@@ -74,8 +75,13 @@
     </section>
 
     <section class="product-section">
-      <h2>Các sản phẩm khác</h2>
+      <h2>Các sản phẩm RELATED</h2>
       <img src="{{ url_for('static', filename='images/prod2.png') }}" alt="Other Products" />
+    </section>
+
+    <section class="product-section">
+      <h2>Các sản phẩm khác</h2>
+      <img src="{{ url_for('static', filename='images/prod3.png') }}" alt="Another Products" />
     </section>
 
     <!-- Extra info -->
