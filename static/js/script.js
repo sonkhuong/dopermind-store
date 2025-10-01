@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".btn-buy").forEach(btn => {
         btn.addEventListener("click", e => {
             e.preventDefault(); // bỏ mặc định
-            window.open("https://www.facebook.com/taphoask", "_blank");
+            window.open("https://zalo.me/0843145555", "_blank");
         });
     });
 

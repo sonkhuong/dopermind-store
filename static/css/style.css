@@ -164,7 +164,7 @@ section h2 {
 }
 
 #contact .icons img {
-    width: 20vh;
+    width: 15vh;
     cursor: pointer;
     transition: transform 0.3s, filter 0.3s;
     filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.8));
